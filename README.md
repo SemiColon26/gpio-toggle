@@ -34,17 +34,16 @@ which will run the compile command automatically.
 You’ll need two terminals to use the app smoothly:
 
 In Terminal 1:
-Command to start toggle:
---->./gpio-toggle start
+Command to start toggle: --->./gpio-toggle start
 
 In Terminal 2: Check status or stop toggling
-Check status:
---->./gpio-toggle status
+Check status: --->./gpio-toggle status
 
-Stop toggling:
---->./gpio-toggle stop
+Stop toggling: --->./gpio-toggle stop
 
 The toggling runs in Terminal 1 and outputs every second.
+
 Use Terminal 2 to send commands without interrupting Terminal 1.
+
 Tested on WSL (Windows Subsystem for Linux).
 
