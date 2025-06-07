@@ -17,10 +17,33 @@ You can:
 
 ---
 
-##  How to Build
+##  How to Build and Run
 
-Make sure you have `gcc` installed (most Linux setups like WSL do). Then just run:
+Open your terminal and **navigate to the project directory**:
+--->cd gpio-toggle
 
-```bash
-make
+The command to compile your program (using gcc) is:
+
+--->gcc -Wall -o gpio-toggle gpio_toggle.c
+
+If you have a Makefile, you can simply run:
+--->make
+which will run the compile command automatically.
+
+You’ll need two terminals to use the app smoothly:
+
+In Terminal 1:
+Command to start toggle:
+--->./gpio-toggle start
+
+In Terminal 2: Check status or stop toggling
+Check status:
+--->./gpio-toggle status
+
+Stop toggling:
+--->./gpio-toggle stop
+
+The toggling runs in Terminal 1 and outputs every second.
+Use Terminal 2 to send commands without interrupting Terminal 1.
+Tested on WSL (Windows Subsystem for Linux).
 
