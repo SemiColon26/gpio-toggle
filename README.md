@@ -28,6 +28,7 @@ The command to compile your program (using gcc) is:
 
 If you have a Makefile, you can simply run:
 --->make
+
 which will run the compile command automatically.
 
 You’ll need two terminals to use the app smoothly:
